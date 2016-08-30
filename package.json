@@ -1,0 +1,83 @@
+{
+  "name": "sinopia",
+  "version": "1.4.0",
+  "description": "Private npm repository server",
+  "author": {
+    "name": "Alex Kocharin",
+    "email": "alex@kocharin.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rlidwka/sinopia"
+  },
+  "main": "index.js",
+  "bin": {
+    "sinopia": "./bin/sinopia"
+  },
+  "dependencies": {
+    "JSONStream": "1.x",
+    "async": "^2.0.1",
+    "body-parser": ">=1.9.2 <2.0.0-0",
+    "bunyan": ">=0.22.1 <2.0.0-0",
+    "commander": ">=2.3.0 <3.0.0-0",
+    "compression": ">=1.2.0 <2.0.0-0",
+    "cookies": ">=0.5.0 <1.0.0-0",
+    "crypt3": "^1.0.0",
+    "es6-shim": "^0.35.1",
+    "express": ">=5.0.0-0 <6.0.0-0",
+    "express-json5": ">=0.1.0 <1.0.0-0",
+    "fs-ext": "^0.5.0",
+    "handlebars": "^4.0.5",
+    "highlight.js": "^9.6.0",
+    "http-errors": ">=1.2.0",
+    "jju": "1.x",
+    "js-yaml": ">=3.0.1 <4.0.0-0",
+    "lunr": ">=0.5.2 <1.0.0-0",
+    "minimatch": "^3.0.3",
+    "mkdirp": ">=0.3.5 <1.0.0-0",
+    "readable-stream": "^2.1.5",
+    "render-readme": ">=0.2.1",
+    "request": ">=2.31.0 <3.0.0-0",
+    "semver": "^5.3.0",
+    "sinopia-htpasswd": ">= 0.4.3"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.4",
+    "browserify": "^13.1.0",
+    "browserify-handlebars": "1.x",
+    "eslint": "^3.4.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "mocha": "^3.0.2",
+    "onclick": ">=0.1.0 <1.0.0-0",
+    "rimraf": ">=2.2.5 <3.0.0-0",
+    "transition-complete": ">=0.0.2 <1.0.0-0",
+    "unopinionate": ">=0.0.4 <1.0.0-0"
+  },
+  "keywords": [
+    "private",
+    "package",
+    "repository",
+    "registry",
+    "modules",
+    "proxy",
+    "server"
+  ],
+  "scripts": {
+    "test": "eslint .",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "preferGlobal": true,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": {
+    "type": "WTFPL",
+    "url": "http://www.wtfpl.net/txt/copying/"
+  }
+}
